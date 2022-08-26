@@ -1,0 +1,71 @@
+.heading{
+    font-size: 46px;
+    font-weight: 500;
+    color: var(--darkshade);
+    margin-bottom: 30px;
+}
+
+.dropdown-label{
+    margin-top: 16px;
+    font-size: 22px;
+}
+/*to style the dropdown component like alignment ,color, position etc*/
+.dropdown-component{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:var(--white);
+    box-shadow: var(--white-shadow);
+    height: 100%;
+    position: relative;
+    border-radius: 14px;
+    color:var(--grey) ;
+    margin-top: 16px;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*to style the selected option like alignment etc*/
+.selected-option{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/*to style drop down box*/
+.dropdown-options{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    transform: translateY(100%);
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 0px 0px 18px 18px;
+   /* 
+   in case in future more options gets added
+    max-height: 300px;
+    overflow:scroll;
+    */
+}
+
+/*to style individual dropdown option*/
+.dropdown-option{
+    padding: 08px;
+}
+
+.dropdown-option:hover{
+    color: var(--grey);
+    background-color: dimgrey;
+}
+
+/*to make screen responsive */
+@media only screen and (max-width:500px){
+    .heading{
+        font-size: 20px;
+    }
+
+    .dropdown-label{
+        font-size: 16px;
+    }
+}

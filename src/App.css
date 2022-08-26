@@ -1,0 +1,11 @@
+
+@import './common/styles/styles.css';
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--background);
+}
